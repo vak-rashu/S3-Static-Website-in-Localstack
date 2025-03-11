@@ -5,5 +5,5 @@ Localstack provides a local wrapper for Terraform and to you it you need to writ
 tflocal is a local wrapper for terraform and it allows to work just like terraform only it is in our local machine.
 
 In this IaC, using tflocal, I have hosted a website using S3 and Route53.
-Though their in no support for Route53 as a DNS Service in their community version of Localstack, the domain that i have configured for it to will no work.
+Though their in no support for Route53 as a DNS Service in their community version of Localstack, and hence the domain that I have configured will not work.
 But the S3 website configuration works perfectly fine.
