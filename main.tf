@@ -49,12 +49,12 @@ resource "aws_s3_bucket_website_configuration" "tf_bucket_config" {
 } 
 
 resource "aws_route53_zone" "tf_zone" {
-	name = "mylocalwebsite.test"  
+	name = "mylocalwebsite.com"  
 }
 
 resource "aws_route53_record" "tf_record"{
 	zone_id = aws_route53_zone.tf_zone.zone_id
-	name = "mylocalwebsite.test"
+	name = "www.mylocalwebsite.com"
 	type = "A"
 	alias {
 		name = aws_s3_bucket_website_configuration.tf_bucket_config.website_endpoint
